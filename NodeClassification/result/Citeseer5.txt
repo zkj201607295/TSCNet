@@ -1,0 +1,79 @@
+Namespace(Bern_lr=0.01, Inc1=1, Inc2=2, Inc3=3, Init='PPR', K=10, alpha=0.1, dataset='Actor', device=0, dprate=0.0, dropout=0.0, early_stopping=70, epochs=500, heads=8, hidden=32, lr=0.01, net='TSCGCN', output_heads=1, runs=1, seed=2108550661, train_rate=0.9, val_rate=0.09, weight_decay=0.0005)
+---------------------------------------------
+0 : train_loss tensor(1.5822)  val_loss tensor(1.5230)  tmp_train_acc 0.26390212901175725  tmp_test_acc 0.09967845659163987  test_acc 0.09967845659163987
+1 : train_loss tensor(1.5488)  val_loss tensor(1.5142)  tmp_train_acc 0.3630441690498888  tmp_test_acc 0.3633440514469453  test_acc 0.3633440514469453
+2 : train_loss tensor(1.4939)  val_loss tensor(1.4475)  tmp_train_acc 0.37956784238957736  tmp_test_acc 0.4003215434083601  test_acc 0.4003215434083601
+3 : train_loss tensor(1.4316)  val_loss tensor(1.3730)  tmp_train_acc 0.38433428662217983  tmp_test_acc 0.41961414790996787  test_acc 0.41961414790996787
+4 : train_loss tensor(1.3912)  val_loss tensor(1.3094)  tmp_train_acc 0.39958690816650777  tmp_test_acc 0.43408360128617357  test_acc 0.43408360128617357
+5 : train_loss tensor(1.3596)  val_loss tensor(1.2858)  tmp_train_acc 0.4183349221480776  tmp_test_acc 0.4356913183279742  test_acc 0.4356913183279742
+6 : train_loss tensor(1.3319)  val_loss tensor(1.3043)  tmp_train_acc 0.43454083253892595  tmp_test_acc 0.4228295819935691  test_acc 0.4356913183279742
+7 : train_loss tensor(1.3121)  val_loss tensor(1.2964)  tmp_train_acc 0.4469335875436924  tmp_test_acc 0.4228295819935691  test_acc 0.4356913183279742
+8 : train_loss tensor(1.2952)  val_loss tensor(1.2917)  tmp_train_acc 0.45583095011121705  tmp_test_acc 0.43086816720257237  test_acc 0.4356913183279742
+9 : train_loss tensor(1.2789)  val_loss tensor(1.2827)  tmp_train_acc 0.46059739434381947  tmp_test_acc 0.42443729903536975  test_acc 0.42443729903536975
+10 : train_loss tensor(1.2629)  val_loss tensor(1.2863)  tmp_train_acc 0.4718779790276454  tmp_test_acc 0.42765273311897106  test_acc 0.42443729903536975
+11 : train_loss tensor(1.2476)  val_loss tensor(1.2860)  tmp_train_acc 0.4739434381951064  tmp_test_acc 0.43408360128617357  test_acc 0.42443729903536975
+12 : train_loss tensor(1.2322)  val_loss tensor(1.2911)  tmp_train_acc 0.48395297108357166  tmp_test_acc 0.42604501607717044  test_acc 0.42443729903536975
+13 : train_loss tensor(1.2186)  val_loss tensor(1.3013)  tmp_train_acc 0.4869717190975532  tmp_test_acc 0.43890675241157556  test_acc 0.42443729903536975
+14 : train_loss tensor(1.2041)  val_loss tensor(1.2980)  tmp_train_acc 0.4938036224976168  tmp_test_acc 0.4356913183279742  test_acc 0.42443729903536975
+15 : train_loss tensor(1.1900)  val_loss tensor(1.3118)  tmp_train_acc 0.5007944073721005  tmp_test_acc 0.42765273311897106  test_acc 0.42443729903536975
+16 : train_loss tensor(1.1775)  val_loss tensor(1.3108)  tmp_train_acc 0.5046075627581824  tmp_test_acc 0.43890675241157556  test_acc 0.42443729903536975
+17 : train_loss tensor(1.1631)  val_loss tensor(1.3399)  tmp_train_acc 0.5142993326978075  tmp_test_acc 0.42443729903536975  test_acc 0.42443729903536975
+18 : train_loss tensor(1.1516)  val_loss tensor(1.3302)  tmp_train_acc 0.5152526215443279  tmp_test_acc 0.42926045016077163  test_acc 0.42443729903536975
+19 : train_loss tensor(1.1389)  val_loss tensor(1.3445)  tmp_train_acc 0.521290117572291  tmp_test_acc 0.42604501607717044  test_acc 0.42443729903536975
+20 : train_loss tensor(1.1273)  val_loss tensor(1.3757)  tmp_train_acc 0.530664124563076  tmp_test_acc 0.4228295819935691  test_acc 0.42443729903536975
+21 : train_loss tensor(1.1187)  val_loss tensor(1.3579)  tmp_train_acc 0.532729583730537  tmp_test_acc 0.42604501607717044  test_acc 0.42443729903536975
+22 : train_loss tensor(1.1086)  val_loss tensor(1.3706)  tmp_train_acc 0.53844931680966  tmp_test_acc 0.432475884244373  test_acc 0.42443729903536975
+23 : train_loss tensor(1.0953)  val_loss tensor(1.4112)  tmp_train_acc 0.5533841754051477  tmp_test_acc 0.40192926045016075  test_acc 0.42443729903536975
+24 : train_loss tensor(1.0846)  val_loss tensor(1.3735)  tmp_train_acc 0.5514775977121068  tmp_test_acc 0.4212218649517685  test_acc 0.42443729903536975
+25 : train_loss tensor(1.0741)  val_loss tensor(1.3721)  tmp_train_acc 0.5568795678423896  tmp_test_acc 0.42926045016077163  test_acc 0.42443729903536975
+26 : train_loss tensor(1.0616)  val_loss tensor(1.4149)  tmp_train_acc 0.571337782014617  tmp_test_acc 0.3971061093247588  test_acc 0.42443729903536975
+27 : train_loss tensor(1.0516)  val_loss tensor(1.3871)  tmp_train_acc 0.5707022561169368  tmp_test_acc 0.4035369774919614  test_acc 0.42443729903536975
+28 : train_loss tensor(1.0484)  val_loss tensor(1.3670)  tmp_train_acc 0.5625993009215126  tmp_test_acc 0.4356913183279742  test_acc 0.42443729903536975
+29 : train_loss tensor(1.0345)  val_loss tensor(1.4716)  tmp_train_acc 0.5835716555449635  tmp_test_acc 0.3745980707395498  test_acc 0.42443729903536975
+30 : train_loss tensor(1.0257)  val_loss tensor(1.4581)  tmp_train_acc 0.582777248172863  tmp_test_acc 0.39389067524115756  test_acc 0.42443729903536975
+31 : train_loss tensor(1.0447)  val_loss tensor(1.4069)  tmp_train_acc 0.5552907530981888  tmp_test_acc 0.42765273311897106  test_acc 0.42443729903536975
+32 : train_loss tensor(1.0247)  val_loss tensor(1.5789)  tmp_train_acc 0.586590403558945  tmp_test_acc 0.3617363344051447  test_acc 0.42443729903536975
+33 : train_loss tensor(1.0254)  val_loss tensor(1.4355)  tmp_train_acc 0.5684779154750557  tmp_test_acc 0.42926045016077163  test_acc 0.42443729903536975
+34 : train_loss tensor(0.9943)  val_loss tensor(1.4831)  tmp_train_acc 0.5975532252939307  tmp_test_acc 0.39228295819935693  test_acc 0.42443729903536975
+35 : train_loss tensor(0.9933)  val_loss tensor(1.3811)  tmp_train_acc 0.5946933587543692  tmp_test_acc 0.4212218649517685  test_acc 0.42443729903536975
+36 : train_loss tensor(1.0059)  val_loss tensor(1.4062)  tmp_train_acc 0.5813473149030823  tmp_test_acc 0.41318327974276525  test_acc 0.42443729903536975
+37 : train_loss tensor(1.0084)  val_loss tensor(1.3608)  tmp_train_acc 0.5784874483635208  tmp_test_acc 0.43408360128617357  test_acc 0.42443729903536975
+38 : train_loss tensor(0.9728)  val_loss tensor(1.4165)  tmp_train_acc 0.613600254210359  tmp_test_acc 0.40514469453376206  test_acc 0.42443729903536975
+39 : train_loss tensor(0.9969)  val_loss tensor(1.5066)  tmp_train_acc 0.5823006037496028  tmp_test_acc 0.4212218649517685  test_acc 0.42443729903536975
+40 : train_loss tensor(1.0189)  val_loss tensor(1.5873)  tmp_train_acc 0.5622815379726724  tmp_test_acc 0.41479099678456594  test_acc 0.42443729903536975
+41 : train_loss tensor(0.9657)  val_loss tensor(1.4456)  tmp_train_acc 0.5986653956148713  tmp_test_acc 0.43890675241157556  test_acc 0.42443729903536975
+42 : train_loss tensor(1.0081)  val_loss tensor(1.3673)  tmp_train_acc 0.5719733079122974  tmp_test_acc 0.45819935691318325  test_acc 0.42443729903536975
+43 : train_loss tensor(0.9796)  val_loss tensor(1.3524)  tmp_train_acc 0.5843660629170638  tmp_test_acc 0.4517684887459807  test_acc 0.42443729903536975
+44 : train_loss tensor(1.0304)  val_loss tensor(1.5129)  tmp_train_acc 0.5484588496981252  tmp_test_acc 0.4356913183279742  test_acc 0.42443729903536975
+45 : train_loss tensor(0.9889)  val_loss tensor(1.3736)  tmp_train_acc 0.5724499523355576  tmp_test_acc 0.45819935691318325  test_acc 0.42443729903536975
+46 : train_loss tensor(0.9532)  val_loss tensor(1.3954)  tmp_train_acc 0.6045440101684144  tmp_test_acc 0.44855305466237944  test_acc 0.42443729903536975
+47 : train_loss tensor(0.9678)  val_loss tensor(1.8877)  tmp_train_acc 0.6280584683825866  tmp_test_acc 0.32636655948553056  test_acc 0.42443729903536975
+48 : train_loss tensor(1.0667)  val_loss tensor(2.1674)  tmp_train_acc 0.5935811884334287  tmp_test_acc 0.2877813504823151  test_acc 0.42443729903536975
+49 : train_loss tensor(0.9313)  val_loss tensor(1.4009)  tmp_train_acc 0.6215443279313632  tmp_test_acc 0.4598070739549839  test_acc 0.42443729903536975
+50 : train_loss tensor(0.9030)  val_loss tensor(1.4480)  tmp_train_acc 0.6394979345408326  tmp_test_acc 0.44212218649517687  test_acc 0.42443729903536975
+51 : train_loss tensor(0.9234)  val_loss tensor(1.7419)  tmp_train_acc 0.6472831267874166  tmp_test_acc 0.3327974276527331  test_acc 0.42443729903536975
+52 : train_loss tensor(0.8823)  val_loss tensor(1.4565)  tmp_train_acc 0.6525262154432793  tmp_test_acc 0.42604501607717044  test_acc 0.42443729903536975
+53 : train_loss tensor(0.8563)  val_loss tensor(1.5498)  tmp_train_acc 0.6857324435970766  tmp_test_acc 0.38263665594855306  test_acc 0.42443729903536975
+54 : train_loss tensor(0.8519)  val_loss tensor(1.5994)  tmp_train_acc 0.6900222434064188  tmp_test_acc 0.3858520900321543  test_acc 0.42443729903536975
+55 : train_loss tensor(0.8430)  val_loss tensor(1.5005)  tmp_train_acc 0.6857324435970766  tmp_test_acc 0.41639871382636656  test_acc 0.42443729903536975
+56 : train_loss tensor(0.8296)  val_loss tensor(1.5250)  tmp_train_acc 0.6963775023832222  tmp_test_acc 0.41318327974276525  test_acc 0.42443729903536975
+57 : train_loss tensor(0.8143)  val_loss tensor(1.5858)  tmp_train_acc 0.7117890054019702  tmp_test_acc 0.39228295819935693  test_acc 0.42443729903536975
+58 : train_loss tensor(0.8069)  val_loss tensor(1.6149)  tmp_train_acc 0.7167143311089927  tmp_test_acc 0.37942122186495175  test_acc 0.42443729903536975
+59 : train_loss tensor(0.8007)  val_loss tensor(1.5869)  tmp_train_acc 0.7092469018112488  tmp_test_acc 0.39228295819935693  test_acc 0.42443729903536975
+60 : train_loss tensor(0.7891)  val_loss tensor(1.5516)  tmp_train_acc 0.7129011757229107  tmp_test_acc 0.4067524115755627  test_acc 0.42443729903536975
+61 : train_loss tensor(0.7937)  val_loss tensor(1.5642)  tmp_train_acc 0.6984429615506832  tmp_test_acc 0.41318327974276525  test_acc 0.42443729903536975
+62 : train_loss tensor(0.7861)  val_loss tensor(1.5797)  tmp_train_acc 0.7051159834763266  tmp_test_acc 0.409967845659164  test_acc 0.42443729903536975
+63 : train_loss tensor(0.7747)  val_loss tensor(1.6624)  tmp_train_acc 0.7219574197648554  tmp_test_acc 0.3713826366559485  test_acc 0.42443729903536975
+64 : train_loss tensor(0.7856)  val_loss tensor(1.7933)  tmp_train_acc 0.7178265014299333  tmp_test_acc 0.3553054662379421  test_acc 0.42443729903536975
+65 : train_loss tensor(0.7956)  val_loss tensor(1.8616)  tmp_train_acc 0.7087702573879886  tmp_test_acc 0.3311897106109325  test_acc 0.42443729903536975
+66 : train_loss tensor(0.7953)  val_loss tensor(1.8695)  tmp_train_acc 0.7067047982205275  tmp_test_acc 0.3327974276527331  test_acc 0.42443729903536975
+67 : train_loss tensor(0.7833)  val_loss tensor(1.7523)  tmp_train_acc 0.6930409914204004  tmp_test_acc 0.4115755627009646  test_acc 0.42443729903536975
+68 : train_loss tensor(0.8405)  val_loss tensor(1.6053)  tmp_train_acc 0.638385764219892  tmp_test_acc 0.43408360128617357  test_acc 0.42443729903536975
+69 : train_loss tensor(0.8599)  val_loss tensor(1.4983)  tmp_train_acc 0.6352081347314903  tmp_test_acc 0.44855305466237944  test_acc 0.42443729903536975
+70 : train_loss tensor(0.8245)  val_loss tensor(1.9433)  tmp_train_acc 0.6731808071178901  tmp_test_acc 0.36977491961414793  test_acc 0.42443729903536975
+The sum of epochs: 71
+run_1 	 test_acc: 0.4244
+each run avg_time: 343.9725704193115 s
+each epoch avg_time: 4777.396811379327 ms
+GAT on dataset Actor, in 1 repeated experiment:
+test acc mean = 42.4437 ¡À 0.0000  	 val acc mean = 43.5673

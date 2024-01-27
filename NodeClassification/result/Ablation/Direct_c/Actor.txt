@@ -1,0 +1,79 @@
+Namespace(Bern_lr=0.01, Inc1=1, Inc2=2, Inc3=3, Init='PPR', K=10, alpha=0.1, dataset='Actor', device=0, dprate=0.0, dropout=0.0, early_stopping=70, epochs=500, heads=8, hidden=32, lr=0.01, net='TSCGCN', output_heads=1, runs=1, seed=2108550661, train_rate=0.6, val_rate=0.2, weight_decay=0.0005)
+---------------------------------------------
+0 : train_loss tensor(1.6094)  val_loss tensor(1.6060)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+1 : train_loss tensor(1.6093)  val_loss tensor(1.5834)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+2 : train_loss tensor(1.6090)  val_loss tensor(1.5939)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.2894236858771374  test_acc 0.34325522482583914
+3 : train_loss tensor(1.6091)  val_loss tensor(1.6005)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+4 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+5 : train_loss tensor(1.6092)  val_loss tensor(1.5896)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+6 : train_loss tensor(1.6091)  val_loss tensor(1.5926)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+7 : train_loss tensor(1.6091)  val_loss tensor(1.5957)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+8 : train_loss tensor(1.6091)  val_loss tensor(1.5949)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+9 : train_loss tensor(1.6091)  val_loss tensor(1.5930)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+10 : train_loss tensor(1.6091)  val_loss tensor(1.5927)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+11 : train_loss tensor(1.6091)  val_loss tensor(1.5936)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+12 : train_loss tensor(1.6091)  val_loss tensor(1.5941)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+13 : train_loss tensor(1.6091)  val_loss tensor(1.5938)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+14 : train_loss tensor(1.6091)  val_loss tensor(1.5935)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+15 : train_loss tensor(1.6091)  val_loss tensor(1.5935)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+16 : train_loss tensor(1.6091)  val_loss tensor(1.5936)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+17 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+18 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+19 : train_loss tensor(1.6091)  val_loss tensor(1.5936)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+20 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+21 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+22 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+23 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+24 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+25 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+26 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+27 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+28 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+29 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+30 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+31 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+32 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+33 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+34 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+35 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+36 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+37 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+38 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+39 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+40 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+41 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+42 : train_loss tensor(1.6091)  val_loss tensor(1.5938)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+43 : train_loss tensor(1.6091)  val_loss tensor(1.5938)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+44 : train_loss tensor(1.6091)  val_loss tensor(1.5938)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+45 : train_loss tensor(1.6091)  val_loss tensor(1.5938)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+46 : train_loss tensor(1.6091)  val_loss tensor(1.5938)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+47 : train_loss tensor(1.6091)  val_loss tensor(1.5938)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+48 : train_loss tensor(1.6091)  val_loss tensor(1.5938)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+49 : train_loss tensor(1.6091)  val_loss tensor(1.5938)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+50 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+51 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+52 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+53 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+54 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+55 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+56 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+57 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+58 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+59 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+60 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+61 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+62 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+63 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+64 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+65 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+66 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+67 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+68 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+69 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+70 : train_loss tensor(1.6091)  val_loss tensor(1.5937)  tmp_train_acc 0.20262163963563654  tmp_test_acc 0.34325522482583914  test_acc 0.34325522482583914
+The sum of epochs: 71
+run_1 	 test_acc: 0.3433
+each run avg_time: 318.7823190689087 s
+each epoch avg_time: 4427.532209290399 ms
+GAT on dataset Actor, in 1 repeated experiment:
+test acc mean = 34.3255 ¡À 0.0000  	 val acc mean = 33.6184
