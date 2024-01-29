@@ -1,8 +1,0 @@
-Namespace(Bern_lr=0.01, Inc1=1, Inc2=2, Inc3=3, Init='PPR', K=10, alpha=0.1, dataset='Texas', device=0, dprate=0.6, dropout=0.9, early_stopping=100, epochs=1000, heads=8, hidden=32, lr=0.03, net='GraIncV2', output_heads=1, runs=1, seed=2108550661, train_rate=0.5, val_rate=0.3, weight_decay=0.0005)
----------------------------------------------
-The sum of epochs: 104
-run_1 	 test_acc: 0.9636
-each run avg_time: 126.5391480922699 s
-each epoch avg_time: 1205.1347437359038 ms
-GAT on dataset Texas, in 1 repeated experiment:
-test acc mean = 96.3636 ¡À 0.0000  	 val acc mean = 87.2727
