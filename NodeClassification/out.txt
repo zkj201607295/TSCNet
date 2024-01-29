@@ -1,4 +1,0 @@
-Namespace(Bern_lr=0.01, Inc1=1, Inc2=2, Inc3=3, Init='PPR', K=10, alpha=0.1, dataset='Citeseer', device=0, dprate=0.8, dropout=0.5, early_stopping=10, epochs=1000, heads=8, hidden=32, lr=0.01, net='GraIncV2', output_heads=1, runs=1, seed=2108550661, train_rate=0.3, val_rate=0.5, weight_decay=0.0005)
----------------------------------------------
-The sum of epochs: 63
-run_1 	 test_acc: 0.7481
