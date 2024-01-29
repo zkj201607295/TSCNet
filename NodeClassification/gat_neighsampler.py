@@ -4,8 +4,8 @@ from torch import Tensor
 from torch_sparse import SparseTensor
 import torch
 import torch.nn.functional as F
-from torch_geometric.nn import GATv2Conv, GATConv
-#from gat_conv import GATConv
+from torch_geometric.nn import GATv2Conv
+from gat_conv import GATConv
 from tqdm import tqdm
 from torch.nn import Linear, Parameter
 from torch_geometric.nn.inits import glorot, zeros
@@ -26,9 +26,9 @@ class GAT_NeighSampler(torch.nn.Module):
         self.batchnorm = batchnorm
         self.num_layers = num_layers
 
-        self.lins = Linear(in_channels, hidden_channels)
-        self.convs = GATConv(hidden_channels, hidden_channels, heads=layer_heads[0], concat=False)
-        self.line = Linear(hidden_channels, out_channels)
+        self.lins = Linear(in_channels, layer_heads[0] * hidden_channels)
+        self.convs = GATConv(hidden_channels, hidden_channels, heads=layer_heads[0], concat=True)
+        self.line = Linear(layer_heads[0] * hidden_channels, out_channels)
 
         #self.bias = Parameter(torch.Tensor(out_channels))
 
@@ -74,16 +74,22 @@ class GAT_NeighSampler(torch.nn.Module):
         
     def forward(self, x, adjs, device):
 
+        x_all = []
         x = F.dropout(x, p=self.dropout, training=self.training)
         x = self.lins(x)
         #x += self.bias
         x = F.relu(x)
         x = F.dropout(x, p=self.dprate, training=self.training)
+        x_all.append(x[:adjs[-1].size[1]])
         for i, (edge_index, _, size) in enumerate(adjs):
-            #print(size[1])
             x_target = x[:size[1]]
             edge_index = edge_index.to(device)
-            x = self.convs((x, x_target), edge_index)
+            xx = self.convs((x, x_target), edge_index)
+            x_all.append(xx[:adjs[-1].size[1]])
+
+        #temp = F.softmax(self.temp)
+
+        x = self.temp[0] * x_all[0] + self.temp[1] * x_all[1] + self.temp[2] * x_all[2]
 
         x = self.line(x)
         #x += self.bias
@@ -174,14 +180,18 @@ class GAT_NeighSampler(torch.nn.Module):
             x = self.lins(x)
             x = F.relu(x)
             #x = F.dropout(x, p=0.5, training=self.training)
+            x_al.append(x[:adjs[-1].size[1]])
             #print(adjs[-1].size[1])
             for i, (edge_index, _, size) in enumerate(adjs):
                 x_target = x[:size[1]]
                 #print(x_target.shape)
                 edge_index = edge_index.to(device)
-                x = self.convs((x, x_target), edge_index)
+                xx = self.convs((x, x_target), edge_index)
                 #print(xx.shape)
                 #print(xx[:adjs[-1].size[1]].shape)
+                x_al.append(xx[:adjs[-1].size[1]])
+
+            x = self.temp[0] * x_al[0] + self.temp[1] * x_al[1] + self.temp[2] * x_al[2]
 
             #print(x.shape)
 
@@ -302,4 +312,3 @@ class GATv2_NeighSampler(torch.nn.Module):
         pbar.close()
 
         return x_all.log_softmax(dim=-1)
-
