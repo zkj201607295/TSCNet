@@ -1,8 +1,0 @@
-Namespace(Bern_lr=0.01, Inc1=1, Inc2=2, Inc3=3, Init='PPR', K=10, alpha=0.1, dataset='Actor', device=0, dprate=0.9, dropout=0.5, early_stopping=70, epochs=1000, heads=8, hidden=32, lr=0.01, net='GraIncV2', output_heads=1, runs=1, seed=2108550661, train_rate=0.2, val_rate=0.6, weight_decay=0.0005)
----------------------------------------------
-The sum of epochs: 130
-run_1 	 test_acc: 0.3592
-each run avg_time: 175.23212313652039 s
-each epoch avg_time: 1337.6497949352702 ms
-GAT on dataset Actor, in 1 repeated experiment:
-test acc mean = 35.9211 ¡À 0.0000  	 val acc mean = 35.0877
