@@ -19,6 +19,7 @@ import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 import umap
 
+
 def RunExp(args, dataset, data, Net, percls_trn, val_lb):
 
     def train(model, optimizer, data, dprate, train_loader, device):
@@ -28,8 +29,9 @@ def RunExp(args, dataset, data, Net, percls_trn, val_lb):
         #pbar.set_description(f'Epoch {epoch:02d}')
 
         total_loss = total_correct = 0
-
+        time_total = 0
         for batch_size, n_id, adjs in train_loader:
+            t_st = time.time()
             adjs = [adj for adj in adjs]
             #adjs = [adjs.to(device)]
             optimizer.zero_grad()
@@ -43,7 +45,10 @@ def RunExp(args, dataset, data, Net, percls_trn, val_lb):
             #loss.backward()
             loss.backward(retain_graph=True)
             optimizer.step()
+            time_batch = time.time() - t_st  # each epoch train times
+            time_total = time_total + time_batch
             del out
+        return time_total
         #pbar.close()
 
     '''
@@ -127,6 +132,12 @@ def RunExp(args, dataset, data, Net, percls_trn, val_lb):
     model_para.pop('lr')
     model_para.pop('l2')
     tmp_net = Net(in_channels=data.x.size(-1), out_channels=dataset.num_classes, **model_para)
+
+
+    total = sum([param.nelement() for param in tmp_net.parameters()])
+    # 精确地计算：1MB=1024KB=1048576字节
+    print('Number of parameter: % .4fM' % (total / 1e6))
+
     #evaluator = Evaluator(name='ogbn-arxiv')
     #tmp_net = Net(dataset, args)
 
@@ -165,7 +176,7 @@ def RunExp(args, dataset, data, Net, percls_trn, val_lb):
     '''
 
 
-    train_loader = NeighborSampler(data.edge_index, node_idx=train_mask, sizes=[10, 5], batch_size=1024, shuffle=False, num_workers=1)
+    train_loader = NeighborSampler(data.edge_index, node_idx=train_mask, sizes=[10, 5], batch_size=35000, shuffle=False, num_workers=1)
     val_loader = NeighborSampler(data.edge_index, node_idx=val_mask, sizes=[10, 5], batch_size=512, shuffle=False, num_workers=1)
     test_loader = NeighborSampler(data.edge_index, node_idx=test_mask, sizes=[10, 5], batch_size=512, shuffle=False, num_workers=1)
 
@@ -183,9 +194,8 @@ def RunExp(args, dataset, data, Net, percls_trn, val_lb):
 
     time_run=[]
     for epoch in range(args.epochs):
-        t_st=time.time()
-        train(model, optimizer, data, args.dprate, train_loader, device)
-        time_epoch=time.time()-t_st  # each epoch train times
+
+        time_epoch = train(model, optimizer, data, args.dprate, train_loader, device)
         time_run.append(time_epoch)
 
         [train_acc, val_acc, tmp_test_acc], preds, [
@@ -259,7 +269,7 @@ if __name__ == '__main__':
     parser.add_argument('--output_heads', default=1, type=int, help='output_heads for GAT.')
 
     parser.add_argument('--dataset', type=str, choices=['Cora','Citeseer','Pubmed','Computers','Photo', 'Actor','Texas','Cornell', 'CS', 'Physics', 'washington', 'chameleon', 'Reddit', 'Flickr', 'ogbn-arxiv'],
-                        default='Cora')
+                        default='PubMed')
     parser.add_argument('--device', type=int, default=0, help='GPU device.')
     parser.add_argument('--runs', type=int, default=1, help='number of runs.')
     parser.add_argument('--net', type=str, choices=['GCN', 'GAT', 'APPNP', 'ChebNet', 'MLP','GraInc','AFGCN','SIGN','GraIncV2','GraIncV3','FAGCN','SGC','GraphSAGE','ConvG', 'TSCGCN'], default='TSCGCN')
@@ -276,7 +286,6 @@ if __name__ == '__main__':
     print(args)
     print("---------------------------------------------")
 
-    gnn_name = "GAT"
     '''
     gnn_name = args.net
         if gnn_name == 'GCN':
